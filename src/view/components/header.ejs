@@ -1,0 +1,203 @@
+<header
+  style="position: relative; background: #0f0a32"
+  id="site-header"
+  class="site-header header-overlay sticky-header header-style-2 header-fullwidth"
+>
+  <!-- Main Header start -->
+  <div class="header-topbar">
+    <div class="octf-area-wrap">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="topbar-info">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:prorazrab@mail.net"> prorazrab@inbox.ru </a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                Пн - Сб 8:00 - 19:00
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="topbar-right">
+              <ul class="extra-text">
+                <li>
+                  Разработка веб приложений По приемлемым ценам !
+                  <a href="/faq">Цены!</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="octf-main-header">
+    <div class="octf-area-wrap">
+      <div class="container-fluid octf-mainbar-container">
+        <div class="octf-mainbar">
+          <div class="octf-mainbar-row octf-row">
+            <div class="octf-col logo-col">
+              <div id="site-logo" class="site-logo">
+                <a href="/">
+                  <img src="images/logo-light.svg" alt="prorazrab" class="" />
+                </a>
+              </div>
+            </div>
+            <div class="octf-col menu-col">
+              <nav id="site-navigation" class="main-navigation">
+                <ul class="menu nav-style-2">
+                  <li
+                    class="<%- ( req.url.search('/') == 1 ? ' current-menu-item current-menu-ancestor ' : ' ' ) %>"
+                  >
+                    <a href="">Главная</a>
+
+                    <ul class="sub-menu" style="background: none">
+                      <div class="row menu_element menu_element_size">
+                        <% data.forEach(function(data, index) { %> <% if (index
+                        % 5 === 0) { %>
+                        <div class="col" style="max-width: 25%">
+                          <% } %>
+                          <li>
+                            <a href="/service/<%= data.attributes.slug %>"
+                              ><%= data.attributes.title %></a
+                            >
+                          </li>
+                          <% if ((index + 1) % 5 === 0 || (index === data.length
+                          - 1)) { %>
+                        </div>
+                        <% } %> <% }); %>
+                      </div>
+                    </ul>
+                  </li>
+
+                  <li
+                    class="<%- ( req.url.search('service') == 1 ? ' current-menu-item ' : '') %> menu-item-has-children"
+                  >
+                    <a href="#">Разработка</a>
+                    <ul class="sub-menu">
+                      <div class="row menu_element menu_element_size">
+                        <% data.forEach(function(data, index) { %> <% if (index
+                        % 5 === 0) { %>
+                        <div class="col" style="max-width: 25%">
+                          <% } %>
+                          <li>
+                            <a href="/service/<%= data.attributes.slug %>"
+                              ><%= data.attributes.title %></a
+                            >
+                          </li>
+                          <% if ((index + 1) % 5 === 0 || (index === data.length
+                          - 1)) { %>
+                        </div>
+                        <% } %> <% }); %>
+                      </div>
+                      <div class="col" style="max-width: 25%">
+                        <li><a href="/it-services">It Услуги</a></li>
+                        <li>
+                          <a href="/web-development">Web Разработка</a>
+                        </li>
+                        <li style="display: flex;">
+                          <a href="/mobile-development"> <span class="ot-icon-list-text">16. Mobile Разработка <span class="label-flicker">NEW</span></span></a>
+                        </li>
+                        
+                      </div>
+                    </ul>
+                  </li>
+                  <li
+                    class="<%- ( req.url.search('faq') == 1 ? ' current-menu-item ' : ' ' ) %>"
+                  >
+                    <a href="/faq">Ценообразование</a>
+                  </li>
+                  <li
+                    class="<%- ( req.url.search('portfolio') == 1 ? ' current-menu-item ' : ' ' ) %>"
+                  >
+                    <a href="/portfolio">Проекты</a>
+                  </li>
+                  <li
+                    class="<%- ( req.url.search('blog') == 1 ? ' current-menu-item ' : ' ' ) %>"
+                  >
+                    <a href="/blog">Блог</a>
+                  </li>
+                  <li
+                    class="<%- ( req.url.search('contact') == 1 ? ' current-menu-item ' : ' ' ) %>"
+                  >
+                    <a href="/contact">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="octf-col cta-col text-right">
+              <!-- Call To Action -->
+              <div class="octf-btn-cta hstyle-2">
+                <div class="octf-header-module">
+                  <div class="btn-cta-group contact-header">
+                    <i class="fas fa-phone"></i>
+                    <div class="cinfo-header">
+                      <span>Задайте Вопрос?</span>
+                      <span class="main-text">
+                        <a href="tel:+7 902 202 45-46"> +7 902 202 45-46 </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="octf-header-module">
+                  <div class="btn-cta-group btn-cta-header">
+                    <a class="octf-btn octf-btn-third" href="/contact">
+                      Обратная Связь
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header_mobile">
+    <div class="container">
+      <div class="mlogo_wrapper clearfix">
+        <div class="mobile_logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="prorazrab" />
+          </a>
+        </div>
+        <div id="mmenu_toggle">
+          <button></button>
+        </div>
+      </div>
+      <div class="mmenu_wrapper">
+        <div class="mobile_nav collapse">
+          <ul id="menu-main-menu" class="mobile_mainmenu">
+            <li>
+              <a href="/">Главная</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="#">Разработка</a>
+              <ul class="sub-menu">
+                <li><a href="it-services">It Услуги</a></li>
+                <li><a href="web-development">Web Разработка</a></li>
+                <li>
+                  <a href="mobile-development">Mobile Разработка</a>
+                </li>
+              </ul>
+            </li>
+            <li class="current-menu-item current-menu-ancestor">
+              <a href="faq">Ценообразование</a>
+            </li>
+            <li class="menu-item-has-children">
+              <a href="portfolio">Проекты</a>
+            </li>
+            <li>
+              <a href="blog">Блог</a>
+            </li>
+            <li><a href="contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

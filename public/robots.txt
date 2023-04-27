@@ -1,0 +1,4 @@
+  UserAgent: '*',
+  Disallow: '/',
+  CrawlDelay: '5',
+  Sitemap: 'https://nowhere.com/sitemap.xml',

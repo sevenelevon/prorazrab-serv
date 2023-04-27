@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>ProRazrab</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/flaticon.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/royal-preload.css" />
+  </head>
+
+  <body class="royal_preloader">
+    <div id="page" class="site">
+      <%- include("components/header") %>
+
+
+      <div id="content" class="site-content">
+        <div class="page-header flex-middle">
+          <div class="container">
+            <div class="inner flex-middle">
+              <h1 class="page-title">Контакты</h1>
+              <ul id="breadcrumbs" class="breadcrumbs none-style">
+                <li><a href="/">ГЛАВНАЯ</a></li>
+                <li class="active">Контакты</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <section class="contact-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="contact-left">
+                  <div class="ot-heading">
+                    <span>// КОНТАКТНАЯ ИНФОРМАЦИЯ</span>
+                    <h2 class="main-heading">Свяжитесь с нами</h2>
+                  </div>
+                  <div class="space-5"></div>
+                  <p>
+                    Позвоните нам или зайдите в любое время, мы постараемся
+                    ответить на все вопросы в течение 24 часов в рабочие дни. Мы
+                    будем рады ответить на ваши вопросы.
+                  </p>
+                  <div class="contact-info box-style1">
+                    <i class="flaticon-world-globe"></i>
+                    <div class="info-text">
+                      <h6>Наш Адрес:</h6>
+                      <p>
+                        Санкт-Петербург 191186 , Ул. Набережная Реки Мойки, Д.
+                        22
+                      </p>
+                    </div>
+                  </div>
+                  <div class="contact-info box-style1">
+                    <i class="flaticon-envelope"></i>
+                    <div class="info-text">
+                      <h6>Наш Почтовый Ящик:</h6>
+                      <p>prostorazrab@inbox.ru</p>
+                    </div>
+                  </div>
+                  <div class="contact-info box-style1">
+                    <i class="flaticon-phone-1"></i>
+                    <div class="info-text">
+                      <h6>Наш Телефон:</h6>
+                      <p>+7 902 202-45-46</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <form id="message" method="post" class="wpcf7">
+                  <div class="main-form">
+                    <h2>Готовы Начать?</h2>
+                    <p class="font14">
+                      Опишите ваш проект. Ваш электронный адрес не будет
+                      опубликован. Обязательные поля помечены *
+                    </p>
+                    <p>
+                      <input
+                        type="text"
+                        name="name"
+                        value=""
+                        size="40"
+                        class=""
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Ваше Имя *"
+                        required
+                      />
+                    </p>
+                    <p>
+                      <input
+                        type="email"
+                        name="email"
+                        value=""
+                        size="40"
+                        class=""
+                        aria-required="true"
+                        aria-invalid="false"
+                        placeholder="Ваш Email *"
+                        required
+                      />
+                    </p>
+                    <p>
+                      <textarea
+                        name="message"
+                        cols="40"
+                        rows="10"
+                        class=""
+                        aria-invalid="false"
+                        placeholder="Сообщение..."
+                        required
+                      ></textarea>
+                    </p>
+                    <p>
+                      <button type="submit" class="octf-btn octf-btn-light">
+                        Отправить Сообщение
+                      </button>
+                    </p>
+                  </div>
+                </form>
+                <div class="container">
+                  <div class="row">
+                    <div
+                      id="success"
+                      class="col-lg-6 col-md-6 mb-30"
+                      style="
+                        max-width: 100%;
+                        flex: auto;
+                        padding: 0;
+                        display: none;
+                      "
+                    >
+                      <div class="message-box">
+                        <div class="icon-main success">
+                          <span class="flaticon-correct"></span>
+                        </div>
+                        <div class="content-box">
+                          <h6>Сообщение отправлено</h6>
+                          <p>
+                            Мы ответим вам в ближайшее время. <br/>
+                            Примерно через 1 час в рабочее время.
+                          </p>
+                        </div>
+                        <i class="flaticon-close"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="no-padding">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5560007012773!2d30.31843651621117!3d59.9395093689903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631102b400883%3A0x8d8370b469b82848!2z0L3QsNCxLiDRgNC10LrQuCDQnNC-0LnQutC4LCAyMiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1653898903768!5m2!1sru!2sru"
+              height="500"
+              allowfullscreen=""
+              aria-hidden="false"
+              tab/="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <footer id="site-footer" class="site-footer footer-v2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <img src="images/logo-light.svg" alt="" />
+            </div>
+          </div>
+          <div class="space-60"></div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-world-globe"></i></div>
+                <p>Наб. реки Мойки, 22, Санкт-Петербург</p>
+                <h6>Наш Адрес</h6>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-envelope"></i></div>
+                <p>prorazrab@inbox.ru</p>
+                <h6>Наша Почта</h6>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="contact-info box-style2 ft-contact-info">
+                <div class="box-icon"><i class="flaticon-phone-1"></i></div>
+                <p>+7 902 202 45-46</p>
+                <h6>Наш Телефон</h6>
+              </div>
+            </div>
+          </div>
+          <div class="space-65"></div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="/">Главная</a></li>
+                  <li><a href="it-services">Услуги</a></li>
+                  <li><a href="portfolio">Проекты</a></li>
+                  <li><a href="blog">Блог</a></li>
+                  <li><a href="contact">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="space-20"></div>
+              <p class="copyright-text v2">
+                Copyright © 2020 ProRazrab by ThemeModern. All Rights Reserved.
+              </p>
+              <div class="space-26"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- #site-footer -->
+    </div>
+    <!-- #page -->
+    <a id="back-to-top" href="#" class="show">
+      <i class="flaticon-up-arrow"></i>
+    </a>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/header-mobile.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+      window.jQuery = window.$ = jQuery
+      ;(function ($) {
+        'use strict'
+        //Preloader
+        Royal_Preloader.config({
+          mode: 'logo',
+          logo: '/images/logo.svg',
+          logo_size: [160, 75],
+          showProgress: true,
+          showPercentage: true,
+          text_colour: '#000000',
+          background: '#ffffff',
+        })
+      })(jQuery)
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const TOKEN = '5614669162:AAFJpTWBTAlJ8ZgUj7BIuJioeGGdeO7topQ'
+      const CHAT_ID = '-1001546488324'
+      const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+      const success = document.getElementById('success')
+
+      document
+        .getElementById('message')
+        .addEventListener('submit', function (e) {
+          e.preventDefault()
+
+          let message = `<b>Клиент с сайта</b>\n`
+          message += `<b>Отправитель: </b> ${this.name.value}\n`
+          message += `<b>Почта: </b> ${this.email.value}\n`
+          message += `<b>Сообщение: </b> ${this.message.value}`
+
+          axios
+            .post(URI_API, {
+              chat_id: CHAT_ID,
+              parse_mode: 'html',
+              text: message,
+            })
+            .then((res) => {
+              this.name.value = ''
+              this.email.value = ''
+              success.style.display = 'block'
+            })
+            .catch((err) => {
+              console.warn(err)
+            })
+            .finally(() => {
+              console.log('Выполнился запрос')
+            })
+        })
+    </script>
+  </body>
+</html>

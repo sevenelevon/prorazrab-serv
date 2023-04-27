@@ -1,0 +1,31 @@
+<urlset xmlns="http://prorazrab.ru/sitemap">
+<url>
+<loc>http://prorazrab.ru/<loc>
+<changefreq></changefreq>
+<priority>1</priority>
+</url>
+
+<url>
+<loc>http://prorazrab.ru/<loc>
+<changefreq></changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>http://prorazrab.ru/<loc>
+<changefreq></changefreq>
+<priority>0.6</priority>
+</url>
+<% siteMap.forEach((data) => { %>
+<url>
+<loc>http://prorazrab.ru/posts/<%= data.attributes.slug%><loc>
+<changefreq></changefreq>
+<priority>0.4</priority>
+</url>
+<% }) %>
+
+<url>
+<loc>http://prorazrab.ru/<loc>
+<changefreq></changefreq>
+<priority>1</priority>
+</url>
